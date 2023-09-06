@@ -1,0 +1,119 @@
+$color-font: #fff;
+$color-bg-default: #33f;
+$font-default: Arial, Helvetica, sans-serif;
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: $font-default;
+    background-image: url(../assets/images/background.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    @media screen and(max-width: 425px) {
+        background-position: center top;
+    }
+}
+
+
+#imagens {
+    // height: 100vh;
+    background-color: rgb(18, 18, 63);
+    padding: 2rem 1rem;
+
+    .container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        max-width: 1200px;
+        margin: 0 auto;
+
+        h2{
+            font-size: 1.8rem;
+            width: 100%;
+            color: $color-font;
+            margin: 1.5rem 0;
+        }
+
+        img {
+            height: 220px;
+            width: auto;
+            object-fit: fill;
+            margin: 3px auto;
+            object-position: bottom;
+        }
+        
+        // &:hover {
+        //     opacity: 75%;
+        // }
+
+    }
+}
+
+
+footer{
+    width: 100%;
+    
+    .container{
+        max-width: 1200px;
+        margin: 0 auto;
+        
+        p{
+            padding: 1.5rem;
+            color: $color-font;
+        }
+    }
+}
+
+[data-anime]{
+    position: relative;
+    opacity: 0;
+    transition: .4s;
+}
+[data-anime="left"]{
+    left: -80%;
+}
+[data-anime="bottom"]{
+    bottom: -100px;
+}
+
+[data-anime].animate{
+    opacity: 1;
+    left: 0;
+    bottom: 0;
+}
+
+
+@media screen and (max-width: 768px) {
+    #imagens {
+        width: 100%;
+        height: auto;
+    
+        .container {
+            width: 100%;
+            row-gap: 1rem;
+    
+            img {
+                height: auto;
+                width: calc(100% - 55%);
+                margin: 0 auto;
+                object-position: bottom;
+            }
+            
+            // &:hover {
+            //     opacity: 75%;
+            // }
+    
+        }
+    }
+}
+
+
+@import 'player';
+@import 'efeitoParalax';

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/f2bfb1770b.js" crossorigin="anonymous"></script>
+    <title>Framework Simulator</title>
+</head>
+
+<body>
+    <div id="root">
+        <section class="ondas-box">
+
+            <div class="header">
+                <h1>CSS - media</h1>
+            </div>
+
+            <div class="onda" id="onda1"></div>
+            <div class="onda" id="onda2"></div>
+            <div class="onda" id="onda3"></div>
+            <div class="onda" id="onda4"></div>
+        </section>
+        <section class="conteudo">
+            <div class="container" data-anime="bottom">
+                <h2>Treinando novas habilidades</h2>
+                <p>
+                    "Você já navegou por um site que te fez pensar: 'Uau, esse efeito é demais!' Bem, isso provavelmente
+                    era
+                    o efeito parallax em ação. É como a mágica do mundo da web!
+                </p><br>
+
+                <p>
+                    O efeito parallax é quando diferentes elementos na página se movem em velocidades diferentes,
+                    criando
+                    uma sensação de profundidade e movimento. E a melhor parte é que você pode fazer isso com JavaScript
+                    e
+                    CSS!
+                </p><br><br>
+                <p>
+
+                    Com o poder do JavaScript, você pode controlar quando e como os elementos se movem conforme a pessoa
+                    rola a página. E o CSS ajuda a dar vida aos elementos, tornando-os bonitos e animados.
+                </p><br>
+                <p>
+                    Agora, o CSS media queries é como a cereja no topo do bolo. Você pode usá-lo para tornar seu efeito
+                    parallax responsivo, adaptando-se a diferentes tamanhos de tela. É como ter um traje personalizado
+                    para
+                    cada dispositivo!
+                <p><br>
+                <p>
+                    Então, da próxima vez que você ver aquele site incrível com imagens flutuantes e textos que dançam
+                    enquanto rola a página, lembre-se, o efeito parallax é a estrela do show, e JavaScript e CSS são os
+                    seus
+                    assistentes criativos. Divirta-se criando o seu próprio site incrível com esse truque na manga!"
+                </p>
+            </div>
+        </section>
+
+        <section id="video-container">
+            <div class="container">
+                <h2>Video Player</h2>
+                <div id="player" data-anime="left">
+                    <video id="video" src="./assets/video/production.mp4"></video>
+                    <div class="controls">
+                        <button id="btn-play">
+                            <i class="fa fa-play"></i>
+                            <i class="fa-solid fa-pause"></i>
+                        </button>
+                        <div class="timeline">
+                            <div class="bar">
+                                <div class="inner"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div data-anime="bottom" class="text">
+                    <p>Minha jornada é repleta de momentos inesperados que me fazem crescer e aprender. Desde viagens para lugares remotos até desafios pessoais, minha vida aventureira é uma montanha-russa de emoções. <br><br> Enfrentar o desconhecido me ensinou a abraçar a incerteza e a valorizar cada aventura, seja grande ou pequena. É como se cada passo me levasse a uma história única, e estou ansioso para ver o que o próximo capítulo reserva! 🚀🌄✨</p>
+                </div>
+            </div>
+        </section>
+        <section id="imagens">
+            <div class="container">
+                <h2>Galeria de Imagens</h2>
+                <img data-anime="left" src="./assets/images/image-4.jpg" alt="imagem 1">
+                <img data-anime="bottom" src="./assets/images/image-1.jpg" alt="imagem 2">
+                <img data-anime="left" src="./assets/images/image-2.jpg" alt="imagem 3">
+                <img data-anime="bottom" src="./assets/images/image-5.jpg" alt="imagem 4">
+                <img data-anime="left" src="./assets/images/image-7.jpg" alt="imagem 5">
+                <img data-anime="bottom" src="./assets/images/image-3.jpg" alt="imagem 6">
+                <img data-anime="left" src="./assets/images/image-6.jpg" alt="imagem 7">
+                <img data-anime="bottom" src="./assets/images/image-8.jpg" alt="imagem 8">
+                <img data-anime="left" src="./assets/images/image-9.jpg" alt="imagem 9">
+            </div>
+        </section>
+        <footer>
+            <div class="container">
+                <p>&copy; Jhony Pereira</p>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
